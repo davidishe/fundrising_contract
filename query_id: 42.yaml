@@ -1,0 +1,75 @@
+query_id: 42
+amount: "6000000000"
+destination: 0:be1e0bf23cd9bc61f8d187e3682ef936c1b1ea88f95d8cb8b0da8944757645f4
+response_destination: 0:f3447deab74ba937a76077954e9870effdf040a489bb1bf35597e6570f44a8ee
+custom_payload: null
+forward_ton_amount: "0"
+forward_payload:
+  is_right: true
+  value: {}
+
+
+
+wallet_id: 2147483645
+valid_until: 1746049420
+seqno: 166
+actions:
+  - magic: "0xec3c86d"
+    mode: 3
+    msg:
+      sum_type: MessageInternal
+      message_internal:
+        ihr_disabled: true
+        bounce: true
+        bounced: false
+        src: ""
+        dest: 0:501f705a2563b00244df516131a960091fe9d3e7664b8b701dab52f954ee256f
+        value:
+          grams: "50000000"
+          other: {}
+        ihr_fee: "0"
+        fwd_fee: "0"
+        created_lt: 0
+        created_at: 0
+        init: null
+        body:
+          is_right: true
+          value:
+            sum_type: JettonTransfer
+            op_code: 260734629
+            value:
+              query_id: 6083770390913248000
+              amount: "3000000000"
+
+              destination: 0:f3447deab74ba937a76077954e9870effdf040a489bb1bf35597e6570f44a8ee
+              response_destination: 0:b038943ab12085288eae5c2cfeb155205d0af74c6f41e483c9f12e4a9d21be09
+              
+              custom_payload: null
+              forward_ton_amount: "1"
+              forward_payload:
+                is_right: true
+                value:
+                  sum_type: TextComment
+                  op_code: 0
+                  value:
+                    text: ff
+extended: null
+signature: 152b716e8b4028419a25890a062f3182e11fa73529fb23a34b5de4432d7486a50a6c6ff5b0d146589e660ec0c5dcc95682307af3506db6db09e8ab078240d90a
+
+
+
+
+OK:
+Source: 0QCwOJQ6sSCFKI6uXCz-sVUgXQr3TG9B5IPJ8S5KnSG-CdED полноценный wallet_v5r1 на котором есть тоны с акканута, на который был деплой
+destination: 0:f3447deab74ba937a76077954e9870effdf040a489bb1bf35597e6570f44a8ee wallet_v4r2
+response_destination: 0:b038943ab12085288eae5c2cfeb155205d0af74c6f41e483c9f12e4a9d21be09 wallet_v5r1
+              
+
+
+
+
+NOT OK:
+Source: kQDCbJSdMPi4uf1Ey_zektXlEY9wU7iPxd_84dKJvWl7Ueaj // пустой контракт без токенов и с 0.2 тона-газ, 
+destination: 0:f3447deab74ba937a76077954e9870effdf040a489bb1bf35597e6570f44a8ee wallet_v4r2
+response_destination: 0:f3447deab74ba937a76077954e9870effdf040a489bb1bf35597e6570f44a8ee wallet_v4r2
+
