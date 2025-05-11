@@ -56,6 +56,13 @@ contract FundHolder with Deployable {
         } else {
             dump("Received token without attributes");
         }
+
+        send(SendParameters{
+            to: sender(),
+            bounce: true,
+            value: ton("0.1"),
+            mode: SendIgnoreErrors,
+        });
     }
 
 
