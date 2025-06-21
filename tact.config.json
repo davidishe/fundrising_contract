@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tact-lang/tact/main/src/config/configSchema.json",
+  "projects": [
+    {
+      "name": "CrowdfundingMaster",
+      "path": "contracts/crowdfunding_master.tact",
+      "output": "build/CrowdfundingMaster",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "UserInvestment",
+      "path": "contracts/user_investment.tact",
+      "output": "build/UserInvestment",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "JettonWallet",
+      "path": "contracts/jetton/jetton_wallet.tact",
+      "output": "build/JettonWallet",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "JettonMinter",
+      "path": "contracts/jetton/jetton_minter.tact",
+      "output": "build/JettonMinter",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "JettonMinter",
+      "path": "contracts/jetton_minter.tact",
+      "output": "build/JettonMinter",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    }
+  ]
+}
